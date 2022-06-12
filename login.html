@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/portfolio/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap">
+    <script src="https://kit.fontawesome.com/dca01ed147.js" crossorigin="anonymous"></script>
+    <title>
+        Pauline's portfolio
+    </title>
+</head>
+<body>
+    <main>
+        <!-- header section -->
+        <header>
+            <img id="logo" class="logo" src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/logo.png" alt="">
+            <!-- hamburger nav -->
+            <button id="toggle-nav" class="navbar-toggle" aria-label="toggle hamburger">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- nav -->
+            <nav class="nav-bar"> 
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a id="home" class="nav-link" href="/portfolio/index.html">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="site-login" class="nav-link" href="/portfolio/login.html">
+                            LOGIN
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="register" class="nav-link" href="/portfolio/register.html">
+                            REGISTER
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contact" class="nav-link" href="/portfolio/contact.html">
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- login page -->
+        <section class="log-in" id="login">
+            <h2 class="section_title section_title--info" id="title-login">
+                Login
+            </h2>
+
+            <section class="box">
+                <!-- image section -->
+                <div class="column left">
+                    <p>
+                        <img src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/avatar.png" alt="Avatar">
+                    </p>
+
+                    <!-- social media login buttons -->
+                    <div class="btn-group">
+                        <button class="btn" type="submit" id="left-g">
+                            <a href="#">
+                                Login with Google
+                                <i class="fa fa-google" aria-hidden="true"></i>
+                            </a>
+                        </button>
+                        
+                        <button class="btn" type="submit" id="left-git">
+                            <a href="#">
+                                Login with Github
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- login form section -->
+                <div class="column right">
+                    <p class="side-label">
+                        Don't have an account? 
+                        <a href="/portfolio/register.html">
+                            <strong>
+                                Register
+                            </strong>
+                        </a>
+                    </p>
+
+                    <form action="" class="side-label">
+                        <!-- email input -->
+                        <div class="space">
+                            <label for="email">
+                                <span>
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                Email
+                                <input type="text" name="email" id="email" placeholder="Enter your Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" title="Enter a valid email" required>
+                            </label>
+                        </div>
+        
+                        <div class="space">  
+                            <label for="password">
+                                <span>
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                                Password
+                                <input type="password" name="password" id="pwrd" placeholder="Enter your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
+                            </label>
+                        </div>
+        
+                        <!-- remember password checkbox -->
+                        <div class="confirm">
+                            <p id="remember">
+                                <label for="check">
+                                    Remember password
+                                    <input type="checkbox" name="" id="check">
+                                </label>
+                            </p>
+
+                            <!-- buttons -->
+                            <div class="buttons">
+                                <button class="btn" type="submit">
+                                    SignIn
+                                </button>
+                                <button class="btn cancel" type="reset" id="cancel">
+                                    Cancel
+                                </button>
+                            </div>
+
+                            <!-- password reset -->
+                            <p id="reset">
+                                <a href="#">
+                                    Forgot password?
+                                    <strong>
+                                        Reset
+                                    </strong>
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            
+        </section>
+
+         <!-- footer section  -->
+        <footer class="footer-end">
+            <p id="email">
+                <small>
+                    &copy; 2022 Pauline Banye
+                </small>
+            </p>
+        </footer>
+    </main>
+    <script src="/portfolio/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/portfolio/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap">
+    <script src="https://kit.fontawesome.com/dca01ed147.js" crossorigin="anonymous"></script>
+    <title>
+        Pauline's portfolio
+    </title>
+</head>
+<body>
+    <main>
+        <!-- header section -->
+        <header>
+            <img id="logo" class="logo" src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/logo.png" alt="">
+            <!-- hamburger nav -->
+            <button id="toggle-nav" class="navbar-toggle" aria-label="toggle hamburger">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- nav -->
+            <nav class="nav-bar"> 
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a id="home" class="nav-link" href="/portfolio/index.html">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="site-login" class="nav-link" href="/portfolio/login.html">
+                            LOGIN
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="register" class="nav-link" href="/portfolio/register.html">
+                            REGISTER
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contact" class="nav-link" href="/portfolio/contact.html">
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="register" id="reach-out">
+            <h2 class="section_title section_title--info">
+                Contact
+            </h2>
+
+            <p class="contact-subtitle">
+                Hire me or just chat? Send a message or DM via social media and I'll get back to you asap!
+            </p>
+
+            <form action="" class="side-label">
+
+                <!-- name input -->
+                <div class="space">                        
+                    <label for="name">
+                        <span>
+                            <i class="fas fa-user-circle"></i>
+                        </span>
+                        Name
+                        <input type="text" name="name" id="fname" placeholder="Enter your Name" maxlength="15" minlength="3" required>
+                    </label>                       
+                </div>
+
+                <!-- email input -->
+                <div class="space">
+                    <label for="email">
+                        <span>
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        Email
+                        <input type="text" name="email" id="email" placeholder="Enter your Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" title="Enter a valid email" required>
+                    </label>
+                </div>
+
+                <!-- message input -->
+                <div class="space">
+                    <label for="message">
+                        <span>
+                            <i class="fas fa-comment-dots"></i>
+                        </span>
+                        Message
+                        <textarea name="message" id="message" placeholder="Enter your Message" maxlength="500" minlength="10" required></textarea>
+                    </label>
+                </div>
+
+                <!-- buttons -->
+                <div class="buttons">
+                    <button class="btn" type="submit">
+                        Submit
+                    </button>
+                    <button class="btn cancel" type="reset" id="cancel">
+                        Cancel
+                    </button>
+                </div>
+                
+                <!-- socials & contact button -->
+                <div class="contact-socials">
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a class="social-list__link" id="gmail-url" href="mailto:paulinebanye@gmail.com">
+                                <i class='fab fa-google fa-2x'></i>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="social-list__link" id="github-url" href="https://github.com/pauline-banye">
+                                <i class="fa fa-github fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="social-list__link" id="linked-url" href="https://www.linkedin.com/in/paulinebanye">
+                                <i class="fa fa-linkedin-square fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="social-list__link" id="devto-url" href="https://dev.to/pauline-banye">
+                                <i class="fa-brands fa-dev fa-2x">
+                                </i>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="social-list__link" id="discord-url" href="https://discord.gg/WjEFnzC">
+                                <i class="fa-brands fa-discord fa-2x">
+                                </i>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="social-list__link" id="medium-url" href="https://medium.com/@paulinebanye">
+                                <i class="fa-brands fa-medium fa-2x">
+                                </i>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="social-list__link" id="twitter-url" href="https://twitter.com/PauLynn_Bee">
+                                <i class="fa-brands fa-twitter fa-2x">
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </section>
+
+        <!-- footer section  -->
+        <footer class="footer-end">
+            <p id="owner">
+                <small>
+                    &copy; 2022 Pauline Banye
+                </small>
+            </p>
+        </footer>
+
+    </main>
+
+    <script src="/portfolio/js/index.js"></script>
+</body>
+</html>
