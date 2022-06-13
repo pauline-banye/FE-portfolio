@@ -1,54 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="/portfolio/css/main.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap">
     <script src="https://kit.fontawesome.com/dca01ed147.js" crossorigin="anonymous"></script>
     <title>
         Pauline's portfolio
     </title>
 </head>
+
 <body>
-    <main>
+  <main>
         <!-- header section -->
         <header>
-            <img id="logo" class="logo" src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/logo.png" alt="">
-            <!-- hamburger nav -->
-            <button id="toggle-nav" class="navbar-toggle" aria-label="toggle hamburger">
-                <span class="hamburger"></span>
-            </button>
+            <img id="logo" class="logo" src="imgs/logo.png" alt="">
 
-            <!-- nav -->
+            <!-- navigation section -->
             <nav class="nav-bar"> 
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a id="home" class="nav-link" href="/portfolio/index.html">
+                        <a id="home" class="nav-link" href="index.html">
                             ABOUT
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a id="site-login" class="nav-link" href="/portfolio/login.html">
+                        <a id="site-login" class="nav-link" href="login.html">
                             LOGIN
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a id="register" class="nav-link" href="/portfolio/register.html">
+                        <a id="register" class="nav-link" href="register.html">
                             REGISTER
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a id="contact" class="nav-link" href="/portfolio/contact.html">
+                        <a id="contact" class="nav-link" href="contact.html">
                             CONTACT
                         </a>
                     </li>
                 </ul>
             </nav>
         </header>
+        
         
         <section class="register" id="reach-out">
             <h2 class="section_title section_title--info">
@@ -99,8 +99,10 @@
                     <button class="btn" type="submit">
                         Submit
                     </button>
-                    <button class="btn cancel" type="reset" id="cancel">
-                        Cancel
+                    <button class="btn cancel" id="cancel-btn">
+                        <a id="cancel" href="index.html">
+                            Cancel
+                        </a>
                     </button>
                 </div>
                 
@@ -161,7 +163,6 @@
         </footer>
 
     </main>
-
-    <script src="/portfolio/js/index.js"></script>
 </body>
+
 </html>

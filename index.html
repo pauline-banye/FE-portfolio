@@ -1,550 +1,497 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="/portfolio/css/main.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link type="stylesheet" href="path/font-awesome-color-brand.css">
     <script src="https://kit.fontawesome.com/dca01ed147.js" crossorigin="anonymous"></script>
     <title>
         Pauline's portfolio
     </title>
 </head>
-    <body>
-        <main>
-            <!-- header section -->
-            <header>
-                <img id="logo" class="logo" src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/logo.png" alt="">
-                <!-- hamburger nav -->
-                <button id="toggle-nav" class="navbar-toggle" aria-label="toggle hamburger">
-                    <span class="hamburger"></span>
-                </button>
 
-                <!-- nav links -->
-                <nav class="nav-bar"> 
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a id="home" class="nav-link" href="#home">
-                                ABOUT
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="site-login" class="nav-link" href="/portfolio/login.html">
-                                LOGIN
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="register" class="nav-link" href="/portfolio/register.html">
-                                REGISTER
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="contact" class="nav-link" href="/portfolio/contact.html">
-                                CONTACT
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            
-            <!-- home page --> 
-            <section class="intro" id="home">
-                <h1 id="name" class="section_title section_title--home">
-                    Hi, I'm 
-                    <strong>
-                        Pauline Banye
-                    </strong>
-                </h1>
-                <p id="home-sub" class="section_subtitle section_subtitle--home">
-                    DEVELOPER | WRITER
-                </p>
-                <img class="intro__img" src="https://gateway.pinata.cloud/ipfs/QmdTCsxixJWvRHyZGKw2GshawqaF7qmoNPGwvQww7XQTFp/moi.png" alt="">
-            </section>
+<body>
+  <main>
+        <!-- header section -->
+        <header>
+            <img id="logo" class="logo" src="imgs/logo.png" alt="">
 
-            <!-- info section -->
-            <section class="my-info" id="info">
-                <h2 class="section_title section_title--info">
-                    Who I am
-                </h2>
-                <div class="infos">
+            <!-- navigation section -->
+            <nav class="nav-bar"> 
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a id="home" class="nav-link" href="index.html">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="site-login" class="nav-link" href="login.html">
+                            LOGIN
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="register" class="nav-link" href="register.html">
+                            REGISTER
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contact" class="nav-link" href="contact.html">
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- home page --> 
+        <section class="intro" id="home">
+            <h1 id="name" class="section_title section_title--home">
+                Hi, I'm 
+                <strong>
+                    Pauline Banye
+                </strong>
+            </h1>
+            <p id="home-sub" class="section_subtitle section_subtitle--home">
+                DEVELOPER | WRITER
+            </p>
+            <img class="intro__img" src="imgs/moi.png" alt="">
+        </section>
 
-                    <!-- 1st column -->
-                    <article id="web-dev" class="ind-info">
-                        <h3>
-                            Web Developer
-                        </h3>
-                        <p>
-                            Programmer with experience working with Python language and projects using both Django and FastAPI frameworks. 
-                            I have participated in several internships and I am always looking for new opportunities.
-                        </p>
-                    </article>
+        <!-- info section -->
+        <section class="my-info" id="info">
+            <h2 class="section_title section_title--info">
+                Who I am
+            </h2>
+            <div class="infos">
 
-                    <!-- 2nd column -->
-                    <article id="writer" class="ind-info">
-                        <h3>
-                            Freelance Copywriter
-                        </h3>
-                        <p>
-                            Writer with a knack for creating beginner friendly articles in the tech space. I excel at writing / editing content and breaking concepts down in ways that absolute novices can understand them.
-                        </p>
-                    </article>
-
-                    <!-- 3rd column -->
-                    <article id="smart" class="ind-info">
-                        <h3>
-                            Smart Contract Developer
-                        </h3>
-                        <p>
-                            Web3 enthusiast developing smart contracts and NFTs with solidity. Participated in an internship where I led the winning team of the final hackathon.
-                        </p>
-                    </article>
-                </div>
-            </section>
-
-            <!-- experience section -->
-            <section class="experience" id="exp">
-                <h2 class="section_title section_title--exp">
-                    Tech Experience
-                </h2>
-                <p>
-                    I transitioned into tech in 2020. Although mainly self-taught using various online resources, I have had the opportunity to join several internships, which provided a defined learning structure and the experience of working with and leading teams to deliver projects to completion.
-                </p>
-                <article id="zuri" class="experience_body">
-                    <p class="section_subtitle section_subtitle--exp">
-                        ZURI (PYTHON DJANGO) 2021
-                    </p>
+                <!-- 1st column -->
+                <article id="web-dev" class="ind-info">
+                    <h3>
+                        Web Developer
+                    </h3>
                     <p>
-                        An internship organized by TheZuriTeam, focused on training and developing Django applications. My team was responsible for developing a web application that allowed students to search for and apply to various schools.
+                        Programmer with experience working with Python language and projects using both Django and FastAPI frameworks. 
+                        I have participated in several internships and I am always looking for new opportunities.
                     </p>
-                    <ul>
-                        <li>
-                            Undertook the python programming track and excelled to become a finalist. 
-                        </li>
-                        <li>
-                            Worked with a team of 20 people to build the final project
-                        </li>
-                        <li>
-                            Led the backend team throughout the duration of the project.
-                        </li>
-                        <li>
-                            Broke down the required APIs into deliverables and ensured that the backend was fully functional.
-                        </li>
-                        <li>
-                            Handled all merges to the project repo and ensured that there were no conflicts.
-                        </li>
-                    </ul>
                 </article>
-                <article id="afrofem" class="experience_body">
-                    <p class="section_subtitle section_subtitle--exp">
-                        AFRO FEM CODERS (PYTHON / DATA ANALYTICS) 2021
-                    </p>
+
+                <!-- 2nd column -->
+                <article id="writer" class="ind-info">
+                    <h3>
+                        Freelance Copywriter
+                    </h3>
                     <p>
-                        An internship organized by Afro Fem Coders for data analytics using Python, Pandas and SQL.
+                        Writer with a knack for creating beginner friendly articles in the tech space. I excel at writing / editing content and breaking concepts down in ways that absolute novices can understand them.
                     </p>
-                    <ul>
-                        <li>
-                            Learnt about data analysis using software such as Excel, DBVisualizer, Anaconda and Tableau.
-                        </li>
-                        <li>
-                            Utilized programming languages such as Python, SQL and Pandas to clean data and run queries.
-                        </li>
-                        <li>
-                            Worked with a team of 4 on a final data project.
-                        </li>
-                    </ul>
                 </article>
-                <article id="hng" class="experience_body">
-                    <p class="section_subtitle section_subtitle--exp">
-                        HNG18 (PYTHON DJANGO / FASTAPI) 2021
-                    </p>
+
+                <!-- 3rd column -->
+                <article id="smart" class="ind-info">
+                    <h3>
+                        Smart Contract Developer
+                    </h3>
                     <p>
-                        Intensive internship organized by Hotels.ng for web development where interns built an app for working remotely using a variety of programming languages. My team was assigned to create a music plugin which would interface with the project. This plugin enabled users of the app to add and play videos from YouTube and chat with other users.
-                    </p>
-                    <ul>
-                        <li>
-                            Backend team lead for the music plugin throughout the duration of the project.
-                        </li>
-                        <li>
-                            Worked with a team of 100 interns to build the plugin  using Django and React.
-                        </li>
-                        <li>
-                            Created and assigned the required APIs necessary for the plugin to function.
-                        </li>
-                        <li>
-                            Managed the project GitHub repository by reviewing all pull requests and merging or closing when necessary to ensure there were no substandard pull requests or merge conflicts.
-                        </li>
-                        <li>
-                            Ensured that the project was fully functional at the end of the internship. 
-                        </li>
-                        <li>
-                            Excelled to become one of the few HNG finalists at the end of the program.
-                        </li>
-                    </ul>
-                </article>
-                <article id="zurichat" class="experience_body">
-                    <p class="section_subtitle section_subtitle--exp">
-                        ZURICHAT (FASTAPI 2021 - 2022)
-                    </p>
-                    <p>
-                        Functioned as one of the backend maintainers for the Zurichat project, a web application that enables organizations to work and manage their teams and projects remotely.
-                    </p>
-                    <ul>
-                        <li>
-                            Work with a team of 7 towards the completion of the project
-                        </li>
-                        <li>
-                            Contribute codes to the repository to finalize the MVP.
-                        </li>
-                        <li>
-                            Review codes pushed to the repository to ensure it is fully functional and meets the Python standards.
-                        </li>
-                    </ul>
-                </article>
-                <article id="blockgames" class="experience_body">
-                    <p class="section_subtitle section_subtitle--exp">
-                        BLOCKGAMES (SOLIDITY) 2022
-                    </p>
-                    <p>
-                        An internship organized by Blockgames.gg and Nestcoin for Web3 to train interns on the development of various projects on the Ethereum and Polygon blockchain.
-                    </p>
-                    <ul>
-                        <li>
-                            Built several smart contracts and NFTs using Solidity.
-                        </li>
-                        <li>
-                            Worked with various teams and setup the process for pull requests to the team's repositories.
-                        </li>
-                        <li>
-                            Taught team mates how to use GitHub effectively to aviod merge conflicts.
-                        </li>
-                        <li>
-                            Led the final team of 4 to create a decentralized application for voting, which won the closing hackathon.
-                        </li>
-                    </ul>
-                </article>
-                <article id="fullstack" class="experience_body">
-                    <p class="section_subtitle section_subtitle--exp">
-                        ZURITEAM (FULLSTACK) 2022-IN PROGRESS
-                    </p>
-                    <p>
-                        An internship organized by TheZuriTeam to train interns on becoming fullstack developers.
-                    </p>
-                    <ul>
-                        <li>
-                            Learning and developing projects using HTML and CSS.
-                        </li>
-                        <li>
-                            Learning and developing projects using Python programming language and Django framework.
-                        </li>                        
-                    </ul>
-                </article>
-            </section>
-            
-            <!-- skills section -->
-            <section class="skill" id="skill">
-                <h2 class="section_title section_title--info">
-                    Skills
-                </h2>
-                <article class="about_me">
-                    <!-- hard skills -->
-                    <div id="hard" class="hard-skills">
-                        <img src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/Django.jpg" class="hard-icons" alt="">
-                        <img src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/FastAPI.jpg"  class="hard-icons"  alt="">
-                        <img src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/git.jpg" class="hard-icons" alt="">
-                        <img src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/html-css.jpg" class="hard-icons" alt="">
-                        <img src="/portfolio/imgs/skills/python.jpg" class="hard-icons" alt="">
-                        <img src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/solidity.jpg" class="hard-icons" alt="">
-                        <img src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/writing.jpg" class="hard-icons" alt="">
-                    <!-- <div class="hard"> -->
-                        <!-- <label for="file">GitHub  </label>
-                        <progress max="100" value="100">
-                            <div class="progress-bar">
-                                <span style="width: 80%;">Progress: 80%</span>
-                            </div>
-                        </progress>
-
-                        <label for="file">Python (Django)  </label>
-                        <progress max="100" value="85">
-                            <div class="progress-bar">
-                                <span style="width: 80%;">Progress: 80%</span>
-                            </div>
-                        </progress>
-
-                        <label for="file">Technical Writing  </label>
-                        <progress max="100" value="88">
-                            <div class="progress-bar">
-                                <span style="width: 80%;">Progress: 80%</span>
-                            </div>
-                        </progress>
-
-                        <label for="file">Python (FastAPI)  </label>
-                        <progress max="100" value="80">
-                            <div class="progress-bar">
-                                <span style="width: 80%;">Progress: 80%</span>
-                            </div>
-                        </progress>
-
-                        <label for="file">Solidity  </label>
-                        <progress max="100" value="69">
-                            <div class="progress-bar">
-                                <span style="width: 80%;">Progress: 80%</span>
-                            </div>
-                        </progress>
-
-                        <label for="file">HTML  </label>
-                        <progress max="100" value="45">
-                            <div class="progress-bar">
-                                <span style="width: 80%;">Progress: 80%</span>
-                            </div>
-                        </progress>
-
-                        <label for="file">CSS  </label>
-                        <progress max="100" value="45">
-                            <div class="progress-bar">
-                                <span style="width: 80%;">Progress: 80%</span>
-                            </div>
-                        </progress> -->
-                    </div>
-
-                    <!-- soft skills -->
-                    <div id="soft" class="soft-skills">
-                        <p class="soft-icons">
-                            Leadership
-                        </p>
-                        <p class="soft-icons">
-                            Teamwork
-                        </p>
-                        <p class="soft-icons">
-                            Communication
-                        </p>
-                        <p class="soft-icons">
-                            Time management
-                        </p>
-                        <p class="soft-icons">
-                            Project management
-                        </p>
-                        <p class="soft-icons">
-                            Problem-solving
-                        </p>
-                        <p class="soft-icons">
-                            Critical thinking
-                        </p>
-                        <p class="soft-icons">
-                            Attention to Detail
-                        </p>
-                    </div>
-                </article>
-            </section>
-            
-            <!-- hobbies section-->
-            <section class="about-me" id="hobbies">
-                <h2 class="section_title section_title--about">
-                    Hobbies
-                </h2>
-                <p class="section_subtitle section_subtitle--about">
-                    ACTIVITIES I ENJOY
-                </p>
-                <article class="about-me__body">
-                    <p>
-                        <ul id="hobby-list">
-                            <li>
-                                Volunteering by sharing scholarship and internship opportunites.
-                            </li>
-                            <li>
-                                Coding.
-                            </li>
-                            <li>
-                                Reading  motivational books and fiction.
-                            </li>
-                            <li>
-                                Swimming
-                            </li>
-                            <li>
-                                Video games (Call of Duty, Sims)
-                            </li>
-                            <li>
-                                Puzzles
-                            </li>
-                            <li>
-                                Karaoke
-                            </li>
-                        </ul>
+                        Web3 enthusiast developing smart contracts and NFTs with solidity. Participated in an internship where I led the winning team of the final hackathon.
                     </p>
                 </article>
-                <img class="about__img" id="hobbies-pic" src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/vol-bg.png"alt="hobbies image">
-            </section> 
+            </div>
+        </section>
 
-            <!-- priorities section -->
-            <section class="experience" id="priority">
-                <h2 class="section_title section_title--about" id="priority-title">
-                    Priorities
-                </h2>
-                <p class="section_subtitle section_subtitle--priorities">
-                    MOST COMPELLING PRIORITIES
+        <!-- experience section -->
+        <section class="experience" id="exp">
+            <h2 class="section_title section_title--exp">
+                Tech Experience
+            </h2>
+            <p>
+                I transitioned into tech in 2020. Although mainly self-taught using various online resources, I have had the opportunity to join several internships, which provided a defined learning structure and the experience of working with and leading teams to deliver projects to completion.
+            </p>
+            <article id="zuri" class="experience_body">
+                <p class="section_subtitle section_subtitle--exp">
+                    ZURI (PYTHON DJANGO) 2021
                 </p>
                 <p>
-                    <ul>
-                        <li>
-                            Career advancement.
-                        </li>
-                        <li>
-                            Proficiency as a fullstack developer.
-                        </li>
-                        <li>
-                            Secure a well-paid remote opportunity.
-                        </li>
-                        <li>
-                            Gain certifications in various programming languages.
-                        </li>
-                        <li>
-                            Relocate from Nigeria.
-                        </li>
-                    </ul>
+                    An internship organized by TheZuriTeam, focused on training and developing Django applications. My team was responsible for developing a web application that allowed students to search for and apply to various schools.
                 </p>
-            </section>
-
-            <!-- portfolio page -->
-            <section class="my-folio" id="folio">
-                <h2 class="section_title section_title--info">
-                    Portfolio
-                </h2>
+                <ul>
+                    <li>
+                        Undertook the python programming track and excelled to become a finalist. 
+                    </li>
+                    <li>
+                        Worked with a team of 20 people to build the final project
+                    </li>
+                    <li>
+                        Led the backend team throughout the duration of the project.
+                    </li>
+                    <li>
+                        Broke down the required APIs into deliverables and ensured that the backend was fully functional.
+                    </li>
+                    <li>
+                        Handled all merges to the project repo and ensured that there were no conflicts.
+                    </li>
+                </ul>
+            </article>
+            <article id="afrofem" class="experience_body">
+                <p class="section_subtitle section_subtitle--exp">
+                    AFRO FEM CODERS (PYTHON / DATA ANALYTICS) 2021
+                </p>
                 <p>
-                    Listed below are links to a few of my writing samples and projects I have worked on. 
-                    All my codes can currently be found on GitHub.
+                    An internship organized by Afro Fem Coders for data analytics using Python, Pandas and SQL.
                 </p>
-                <!-- portfolio links -->
-                <div class="portfolio">
-                    <a href="https://dev.to/paulinebanye/bitcoin-hacker-bo" class="folio__item">
-                        <img class="folio__img" src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/hack.png" alt="">
-                        <label for="">
-                            <small>
-                                Writing Sample
-                            </small>
-                        </label>
-                    
-                    </a>
-                    <a href="https://music.zuri.chat/music" class="folio__item">
-                        <img class="folio__img" src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/music.jpg" alt="">
-                        <label for="">
-                            <small>
-                                Music plugin
-                            </small>
-                        </label>
-                    </a>
-                    
-                    <a href="https://dev.to/paulinebanye/writing-your-first-smart-contract-with-remix-3b2d" class="folio__item">
-                        <img class="folio__img" src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/ethereum.png" alt="">
-                        <label for="">
-                            <small>
-                                Technical Writing
-                            </small>
-                        </label>
-                    </a>
-
-                    <a href="https://zuri-school.vercel.app/" class="folio__item">
-                        <img class="folio__img" src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/vote2.png" alt="site"/>
-                        <label for="">
-                            <small>
-                                Solidity - ZuriSchool
-                            </small>
-                        </label>
-                    </a>
-
-                    <a href="https://github.com/pauline-banye?tab=repositories" class="folio__item">
-                        <img class="folio__img" src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/git.png" alt="">
-                        <label for="">
-                            <small>
-                                Github Repositories
-                            </small>
-                        </label>
-                    </a>
-
-                    <a href="https://codepen.io/PaulynB" class="folio__item">
-                        <img class="folio__img" src="https://gateway.pinata.cloud/ipfs/QmdRsKd1oCu3rBEJN6tcy73HPndzP2dmVNBqen9qmHAD9k/codepen.png" alt="">
-                        <label for="">
-                            <small>
-                                Codepen
-                            </small>
-                        </label>
-                    </a>
+                <ul>
+                    <li>
+                        Learnt about data analysis using software such as Excel, DBVisualizer, Anaconda and Tableau.
+                    </li>
+                    <li>
+                        Utilized programming languages such as Python, SQL and Pandas to clean data and run queries.
+                    </li>
+                    <li>
+                        Worked with a team of 4 on a final data project.
+                    </li>
+                </ul>
+            </article>
+            <article id="hng" class="experience_body">
+                <p class="section_subtitle section_subtitle--exp">
+                    HNG18 (PYTHON DJANGO / FASTAPI) 2021
+                </p>
+                <p>
+                    Intensive internship organized by Hotels.ng for web development where interns built an app for working remotely using a variety of programming languages. My team was assigned to create a music plugin which would interface with the project. This plugin enabled users of the app to add and play videos from YouTube and chat with other users.
+                </p>
+                <ul>
+                    <li>
+                        Backend team lead for the music plugin throughout the duration of the project.
+                    </li>
+                    <li>
+                        Worked with a team of 100 interns to build the plugin  using Django and React.
+                    </li>
+                    <li>
+                        Created and assigned the required APIs necessary for the plugin to function.
+                    </li>
+                    <li>
+                        Managed the project GitHub repository by reviewing all pull requests and merging or closing when necessary to ensure there were no substandard pull requests or merge conflicts.
+                    </li>
+                    <li>
+                        Ensured that the project was fully functional at the end of the internship. 
+                    </li>
+                    <li>
+                        Excelled to become one of the few HNG finalists at the end of the program.
+                    </li>
+                </ul>
+            </article>
+            <article id="zurichat" class="experience_body">
+                <p class="section_subtitle section_subtitle--exp">
+                    ZURICHAT (FASTAPI 2021 - 2022)
+                </p>
+                <p>
+                    Functioned as one of the backend maintainers for the Zurichat project, a web application that enables organizations to work and manage their teams and projects remotely.
+                </p>
+                <ul>
+                    <li>
+                        Work with a team of 7 towards the completion of the project
+                    </li>
+                    <li>
+                        Contribute codes to the repository to finalize the MVP.
+                    </li>
+                    <li>
+                        Review codes pushed to the repository to ensure it is fully functional and meets the Python standards.
+                    </li>
+                </ul>
+            </article>
+            <article id="blockgames" class="experience_body">
+                <p class="section_subtitle section_subtitle--exp">
+                    BLOCKGAMES (SOLIDITY) 2022
+                </p>
+                <p>
+                    An internship organized by Blockgames.gg and Nestcoin for Web3 to train interns on the development of various projects on the Ethereum and Polygon blockchain.
+                </p>
+                <ul>
+                    <li>
+                        Built several smart contracts and NFTs using Solidity.
+                    </li>
+                    <li>
+                        Worked with various teams and setup the process for pull requests to the team's repositories.
+                    </li>
+                    <li>
+                        Taught team mates how to use GitHub effectively to aviod merge conflicts.
+                    </li>
+                    <li>
+                        Led the final team of 4 to create a decentralized application for voting, which won the closing hackathon.
+                    </li>
+                </ul>
+            </article>
+            <article id="fullstack" class="experience_body">
+                <p class="section_subtitle section_subtitle--exp">
+                    ZURITEAM (FULLSTACK) 2022-IN PROGRESS
+                </p>
+                <p>
+                    An internship organized by TheZuriTeam to train interns on becoming fullstack developers.
+                </p>
+                <ul>
+                    <li>
+                        Learning and developing projects using HTML and CSS.
+                    </li>
+                    <li>
+                        Learning and developing projects using Python programming language and Django framework.
+                    </li>                        
+                </ul>
+            </article>
+        </section>
+        
+        <!-- skills section -->
+        <section class="skill" id="skill">
+            <h2 class="section_title section_title--info">
+                Skills
+            </h2>
+            <article class="about_me">
+                <!-- hard skills -->
+                <div id="hard" class="hard-skills">
+                    <img src="imgs/Django.jpg" class="hard-icons" alt="">
+                    <img src="imgs/FastAPI.jpg"  class="hard-icons"  alt="">
+                    <img src="imgs/git.jpg" class="hard-icons" alt="">
+                    <img src="imgs/html-css.jpg" class="hard-icons" alt="">
+                    <img src="imgs/python.jpg" class="hard-icons" alt="">
+                    <img src="imgs/solidity.jpg" class="hard-icons" alt="">
+                    <img src="imgs/writing.jpg" class="hard-icons" alt="">
                 </div>
-            </section>
 
-            <!-- socials & contact button -->
-            <section class="end">
-                <div class="wrapper">
-                    <p>
-                        Hire me or just chat? Click the button below to send a message or DM via social media and I'll get back to you asap!
+                <!-- soft skills -->
+                <div id="soft" class="soft-skills">
+                    <p class="soft-icons">
+                        Leadership
                     </p>
-                    <a id="contact-button" href="/portfolio/contact.html" class="btn">
-                        contact me
-                    </a>
-                    <ul class="social-list">
-                        <li class="social-list__item">
-                            <a class="social-list__link" id="gmail-url" href="mailto:paulinebanye@gmail.com">
-                                <i class='fab fa-google fa-2x'></i>
-                            </a>
+                    <p class="soft-icons">
+                        Teamwork
+                    </p>
+                    <p class="soft-icons">
+                        Communication
+                    </p>
+                    <p class="soft-icons">
+                        Time management
+                    </p>
+                    <p class="soft-icons">
+                        Project management
+                    </p>
+                    <p class="soft-icons">
+                        Problem-solving
+                    </p>
+                    <p class="soft-icons">
+                        Critical thinking
+                    </p>
+                    <p class="soft-icons">
+                        Attention to Detail
+                    </p>
+                </div>
+            </article>
+        </section>
+        
+        <!-- hobbies section-->
+        <section class="about-me" id="hobbies">
+            <h2 class="section_title section_title--about">
+                Hobbies
+            </h2>
+            <p class="section_subtitle section_subtitle--about">
+                ACTIVITIES I ENJOY
+            </p>
+            <article class="about-me__body">
+                <p>
+                    <ul id="hobby-list">
+                        <li>
+                            Volunteering by sharing scholarship and internship opportunites.
                         </li>
-                        <li class="social-list__item">
-                            <a class="social-list__link" id="github-url" href="https://github.com/pauline-banye">
-                                <i class="fa fa-github fa-2x"></i>
-                            </a>
+                        <li>
+                            Coding.
                         </li>
-                        <li class="social-list__item">
-                            <a class="social-list__link" id="linked-url" href="https://www.linkedin.com/in/paulinebanye">
-                                <i class="fa fa-linkedin-square fa-2x"></i>
-                            </a>
+                        <li>
+                            Reading  motivational books and fiction.
                         </li>
-                        <li class="social-list__item">
-                            <a class="social-list__link" id="devto-url" href="https://dev.to/pauline-banye">
-                                <i class="fa-brands fa-dev fa-2x">
-                                </i>
-                            </a>
+                        <li>
+                            Swimming
                         </li>
-                        <li class="social-list__item">
-                            <a class="social-list__link" id="discord-url" href="https://discord.gg/WjEFnzC">
-                                <i class="fa-brands fa-discord fa-2x">
-                                </i>
-                            </a>
+                        <li>
+                            Video games (Call of Duty, Sims)
                         </li>
-                        <li class="social-list__item">
-                            <a class="social-list__link" id="medium-url" href="https://medium.com/@paulinebanye">
-                                <i class="fa-brands fa-medium fa-2x">
-                                </i>
-                            </a>
+                        <li>
+                            Puzzles
                         </li>
-                        <li class="social-list__item">
-                            <a class="social-list__link" id="twitter-url" href="https://twitter.com/PauLynn_Bee">
-                                <i class="fa-brands fa-twitter fa-2x">
-                                </i>
-                            </a>
-                        <li class="social-list__item">
-                            <a class="social-list__link" id="codepen-url" href="https://codepen.io/PaulynB">
-                                <span class="fa-stack" id="codepen">
-                                    <i class="fa-solid fa-circle fa-stack-2x" id="c-bg"></i>
-                                    <i class="fa-brands fa-codepen fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
+                        <li>
+                            Karaoke
                         </li>
                     </ul>
-                </div>
-            </section>
-
-            <!-- footer section  -->
-            <footer class="footer-end">
-                <p id="owner">
-                    <small>
-                        &copy; 2022 Pauline Banye
-                    </small>
                 </p>
-            </footer>
-        </main>
+            </article>
+            <img class="about__img" id="hobbies-pic" src="imgs/vol-bg.png"alt="hobbies image">
+        </section> 
 
-        <script src="/portfolio/js/index.js"></script>
-    </body>
+        <!-- priorities section -->
+        <section class="experience" id="priority">
+            <h2 class="section_title section_title--about" id="priority-title">
+                Priorities
+            </h2>
+            <p class="section_subtitle section_subtitle--priorities">
+                MOST COMPELLING PRIORITIES
+            </p>
+            <p>
+                <ul>
+                    <li>
+                        Career advancement.
+                    </li>
+                    <li>
+                        Proficiency as a fullstack developer.
+                    </li>
+                    <li>
+                        Secure a well-paid remote opportunity.
+                    </li>
+                    <li>
+                        Gain certifications in various programming languages.
+                    </li>
+                    <li>
+                        Relocate from Nigeria.
+                    </li>
+                </ul>
+            </p>
+        </section>
+
+        <!-- portfolio page -->
+        <section class="my-folio" id="folio">
+            <h2 class="section_title section_title--info">
+                Portfolio
+            </h2>
+            <p>
+                Listed below are links to a few of my writing samples and projects I have worked on. 
+                All my codes can currently be found on GitHub.
+            </p>
+            <!-- portfolio links -->
+            <div class="portfolio">
+                <a href="https://dev.to/paulinebanye/bitcoin-hacker-bo" class="folio__item">
+                    <img class="folio__img" src="imgs/hack.png" alt="">
+                    <label for="">
+                        <small>
+                            Writing Sample
+                        </small>
+                    </label>
+                
+                </a>
+                <a href="https://music.zuri.chat/music" class="folio__item">
+                    <img class="folio__img" src="imgs/music.jpg" alt="">
+                    <label for="">
+                        <small>
+                            Music plugin
+                        </small>
+                    </label>
+                </a>
+                
+                <a href="https://dev.to/paulinebanye/writing-your-first-smart-contract-with-remix-3b2d" class="folio__item">
+                    <img class="folio__img" src="imgs/ethereum.png" alt="">
+                    <label for="">
+                        <small>
+                            Technical Writing
+                        </small>
+                    </label>
+                </a>
+
+                <a href="https://zuri-school.vercel.app/" class="folio__item">
+                    <img class="folio__img" src="imgs/vote2.png" alt="site"/>
+                    <label for="">
+                        <small>
+                            Solidity - ZuriSchool
+                        </small>
+                    </label>
+                </a>
+
+                <a href="https://github.com/pauline-banye?tab=repositories" class="folio__item">
+                    <img class="folio__img" src="imgs/git.png" alt="">
+                    <label for="">
+                        <small>
+                            Github Repositories
+                        </small>
+                    </label>
+                </a>
+
+                <a href="https://codepen.io/PaulynB" class="folio__item">
+                    <img class="folio__img" src="imgs/codepen.png" alt="">
+                    <label for="">
+                        <small>
+                            Codepen
+                        </small>
+                    </label>
+                </a>
+            </div>
+        </section>
+
+        <!-- socials & contact button -->
+        <section class="end">
+            <div class="wrapper">
+                <p>
+                    Hire me or just chat? Click the button below to send a message or DM via social media and I'll get back to you asap!
+                </p>
+                <a id="contact-button" href="contact.html" class="btn">
+                    contact me
+                </a>
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a class="social-list__link" id="gmail-url" href="mailto:paulinebanye@gmail.com">
+                            <i class='fab fa-google fa-2x'></i>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" id="github-url" href="https://github.com/pauline-banye">
+                            <i class="fa fa-github fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" id="linked-url" href="https://www.linkedin.com/in/paulinebanye">
+                            <i class="fa fa-linkedin-square fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" id="devto-url" href="https://dev.to/pauline-banye">
+                            <i class="fa-brands fa-dev fa-2x">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" id="discord-url" href="https://discord.gg/WjEFnzC">
+                            <i class="fa-brands fa-discord fa-2x">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" id="medium-url" href="https://medium.com/@paulinebanye">
+                            <i class="fa-brands fa-medium fa-2x">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" id="twitter-url" href="https://twitter.com/PauLynn_Bee">
+                            <i class="fa-brands fa-twitter fa-2x">
+                            </i>
+                        </a>
+                    <li class="social-list__item">
+                        <a class="social-list__link" id="codepen-url" href="https://codepen.io/PaulynB">
+                            <span class="fa-stack" id="codepen">
+                                <i class="fa-solid fa-circle fa-stack-2x" id="c-bg"></i>
+                                <i class="fa-brands fa-codepen fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- footer section  -->
+        <footer class="footer-end">
+            <p id="owner">
+                <small>
+                    &copy; 2022 Pauline Banye
+                </small>
+            </p>
+        </footer>
+    </main>
+</body>
+
 </html>

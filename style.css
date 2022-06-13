@@ -30,7 +30,6 @@
     }
 }
 
-
 /*  ------------- general sections  ------------- */
 html {
     scroll-behavior: smooth;
@@ -160,7 +159,10 @@ i {
     outline-offset: 3px;
 }
 
-
+#cancel-btn a {
+    color: var(--clr-light);
+    font-weight: var(--fw-bold);
+}
 
 
 /* ------------- DOCUMENT SECTIONS ------------- */
@@ -171,106 +173,31 @@ header {
     justify-content: space-between;
     padding: 10px;
     background-color: var(--clr-accent);
+    width: 100%;
 }
 
 .nav-bar {
-    position: fixed;
-    /* background: var(--clr-dark); */
-    background: var(--clr-light);
-    color: var(--clr-accent);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0%;
-    z-index: 2;
-    transform: translateX(100%);
-    opacity: 85%;
-    transition: 250ms cubic-bezier(0.5, 0, 0.5, 1);;
+    color: var(--clr-dark);
 }
 
 .nav-list {
     display: flex;
-    flex-direction: column;
     list-style: none;
     height: 100%;
+    float: right;
 }
 
 .nav-link {
     color: inherit;
     text-decoration: none;
     font-weight: var(--fw-bold);
-    font-size: var(--fs-h2);
+    font-size: var(--fs-h3);
+    padding: 10px;
 }
 
 .nav-link:hover {
-    transform: scale(1.2);
     text-decoration: underline;
 }
-
-.navbar-toggle {
-    border: 0;
-    right: 0;
-    background: transparent;
-    cursor: pointer;
-    position: absolute;
-    padding: 1em;
-    z-index: 5;
-}
-
-.navbar-open .nav-bar {
-    transform: translateX(0);
-    opacity: 90%;
-}
-
-.navbar-open .hamburger {
-    transform: rotate(225deg);
-    background: var(--clr-accent);
-}
-
-.navbar-open .hamburger::before {
-    transform: rotate(90deg) translateX(-6px);
-}
-
-.navbar-open .hamburger::after {
-    opacity: 0;
-}
-
-.navbar-open .navbar-toggle {
-    position: fixed;
-}
-
-.hamburger {
-    position: relative;
-    display: block;
-}
-
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-    background: var(--clr-dark);
-    width: 2em;
-    height: 3px;
-    border-radius: 1em;
-    transition: transform 250ms ease-in-out;
-}
-
-.hamburger::before,
-.hamburger::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    left: 0;
-    width: 50%;
-}
-
-.hamburger::before {
-    top: 6px;
-}
-
-.hamburger::after {
-    bottom: 6px;
-}
-
 
 /*  ------------- Home section  ------------- */
 .intro {
@@ -383,7 +310,7 @@ header {
 .my-info {
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    background-image: url(https://gateway.pinata.cloud/ipfs/QmdTCsxixJWvRHyZGKw2GshawqaF7qmoNPGwvQww7XQTFp/bw-r.jpg);
+    background-image: url(imgs/bw-r.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -483,7 +410,6 @@ img:hover,
 
 /* section styling */
 .skill {
-    background-image: url(https://gateway.pinata.cloud/ipfs/QmdTCsxixJWvRHyZGKw2GshawqaF7qmoNPGwvQww7XQTFp/col-l.jpg);
     background-blend-mode: overlay;
     max-width: 100%;
     background-color: var(--clr-dark);
@@ -493,12 +419,7 @@ img:hover,
     text-align: center;
 }
 
-/* hard skills progress bar */
-.hard {
-    max-width: 80%;
-    text-align: left;
-    margin: 0 auto 40px;
-}
+/* skills */
 
 /* hard skills container */
 .hard-skills {
@@ -523,43 +444,6 @@ img:hover,
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
     transition: all .2s ease-in-out;
-}
-
-/* hard skills progress bar */
-.hard progress {
-    margin-bottom: 10px;
-}
-
-/* hard skills progress bar length */
-progress[value] {
-    width: 100%;
-    height: 20px;
-    -webkit-appearance: none;
-   appearance: none;
-}
-
-/* hard skills progress bar candy stripes */
-progress[value]::-webkit-progress-bar {
-    background-color: var(--clr-light);
-    border-radius: 5px;
-    box-shadow: 0 2px 5px var(--clr-dark) inset;
-}
-
-/* hard skills progress bar gradient effect */
-progress[value]::-webkit-progress-value {
-    background-image:
-        -webkit-linear-gradient(-45deg, 
-            transparent 33%, rgba(0, 0, 0, .1) 33%, 
-            rgba(0,0, 0, .1) 66%, transparent 66%),
-        -webkit-linear-gradient(top, 
-            rgba(255, 255, 255, .25), 
-            rgba(0, 0, 0, .4)),
-        -webkit-linear-gradient(left, var(--clr-accent), var(--clr-accent));
-
-    border-radius: 3px; 
-    background-size: 35px 20px, 100% 100%, 100% 100%;
-    -webkit-animation: animate-stripes 5s linear infinite;
-    animation: animate-stripes 5s linear infinite;
 }
 
 /* soft skills container */
@@ -649,16 +533,14 @@ progress[value]::-webkit-progress-value {
     color: var(--clr-light);
 }
 
+.skill,
 .my-folio {
-    background-image: url(https://gateway.pinata.cloud/ipfs/QmdTCsxixJWvRHyZGKw2GshawqaF7qmoNPGwvQww7XQTFp/col-l.jpg);
+    background-image: url(imgs/col-l.jpg);
 }
 
+.register,
 .log-in {
-    background-image: url(https://gateway.pinata.cloud/ipfs/QmdTCsxixJWvRHyZGKw2GshawqaF7qmoNPGwvQww7XQTFp/dark-l.jpg);
-}
-
-.register {
-    background-image: url(https://gateway.pinata.cloud/ipfs/QmdTCsxixJWvRHyZGKw2GshawqaF7qmoNPGwvQww7XQTFp/dark-l.jpg);
+    background-image: url(imgs/dark-l.jpg);
 }
 
 .confirm,
@@ -805,19 +687,16 @@ progress[value]::-webkit-progress-value {
 
 .contact-socials {
     margin-top: 0px;
-    /* background: var(--clr-light); */
     border-radius: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
-
 
 .contact-socials .social-list__item i {
     background: var(--clr-light);
     padding: 6px;
     border-radius: 10px;
 }
-
 
 .footer-end {
     color: var(--clr-dark);
@@ -898,7 +777,7 @@ select {
     box-sizing: border-box;
 }
 
-/* Change styles for span and cancel button on extra small screens */
+/* Change styles for span and cancel button on small screens */
 @media screen and (max-width: 300px) {
     span.psw {
        display: block;
@@ -944,9 +823,7 @@ img.avatar {
 .left {
     margin-top: 0;
     height: 100%;
-    /* height: 10vh auto; */
 }
-
 
 @media screen and (max-width: 600px) {
     .column {
