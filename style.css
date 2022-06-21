@@ -741,6 +741,7 @@ textarea {
     color: var(--clr-dark);
 }
 
+input[type=email],
 input[type=text], 
 input[type=password], 
 input[type=tel] {

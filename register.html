@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,, initial-scale=1.0">
-  <link href="style.css" rel="stylesheet" type="text/css" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap">
-    <script src="https://kit.fontawesome.com/dca01ed147.js" crossorigin="anonymous"></script>
-    <title>
-        Pauline's portfolio
-    </title>
-</head>
-
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
+          <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap">
+          <script src="https://kit.fontawesome.com/dca01ed147.js" crossorigin="anonymous"></script>
+          <title>
+              Pauline's portfolio
+          </title>
+    </head>
+      
 <body>
   <main>
         <!-- header section -->
@@ -81,7 +81,7 @@
                             <i class="fas fa-user-circle"></i>
                         </span>
                         First Name
-                        <input type="text" name="firstname" id="fname" placeholder="Enter your First name" maxlength="15" minlength="3" required>
+                        <input type="text" name="firstname" id="fname" placeholder="Enter your First name" oninvalid="setCustomValidity('first name must be more than 3 characters and less than 15')" oninput="setCustomValidity('')" maxlength="15" minlength="3" required>
                     </label>                       
                 </div>
 
@@ -92,7 +92,7 @@
                             <i class="fas fa-user-circle"></i>
                         </span>
                         Last Name
-                        <input type="text" name="surname" id="sname" placeholder="Enter your Surname" maxlength="15" minlength="3" required>
+                        <input type="text" name="surname" id="sname" placeholder="Enter your Surname" oninvalid="setCustomValidity('Surname must be more than 3 characters and less than 15')" oninput="setCustomValidity('')" maxlength="15" minlength="3" required>
                     </label>
                 </div>
 
@@ -103,7 +103,7 @@
                             <i class="fas fa-phone"></i>
                         </span>
                         Phone Number
-                        <input type="tel" name="phone" id="pnumber" placeholder="Enter your phone number" title=" phone number should be in this format 111-1111-111" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" required>
+                        <input type="tel" name="phone" id="pnumber" placeholder="Enter your phone number" oninvalid="setCustomValidity('phone number should be in this format 111-1111-111')" oninput="setCustomValidity('')" title=" phone number should be in this format 111-1111-111" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" required>
                     </label>                        
                 </div>
 
@@ -114,7 +114,7 @@
                             <i class="fas fa-male"></i>
                         </span>
                         Gender
-                        <select name="gender" id="gender" class="form-control" required>
+                        <select name="gender" id="gender" class="form-control" oninvalid="setCustomValidity('What gender do you identify as?')" oninput="setCustomValidity('')" required>
                             <option value="" label="What gender do you identify as?">
                                 Choose your gender
                             </option>
@@ -148,7 +148,7 @@
                             <i class="fas fa-globe"></i>
                         </span>
                         Country
-                        <select name="country" class="form-control" id="country" title="What country are you from?" required>
+                        <select name="country" class="form-control" id="country" oninvalid="setCustomValidity('What country are you from?')" oninput="setCustomValidity('')" title="What country are you from?" required>
                             <option value="" label="What country are you from?">
                                 Select a country
                             </option>
@@ -929,7 +929,7 @@
                             <i class="fas fa-landmark"></i>
                         </span>
                         State / Province
-                        <input type="text" name="state" id="state" placeholder="What state are you from?" required>
+                        <input type="text" name="state" id="state" placeholder="What state are you from?" oninvalid="setCustomValidity('What state are you from?')" oninput="setCustomValidity('')" title="What state are you from?" required>
                     </label>
                 </div>
 
@@ -940,7 +940,7 @@
                             <i class="fas fa-envelope"></i>
                         </span>
                         Email
-                        <input type="text" name="email" id="email" placeholder="Enter your Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" title="Enter a valid email" required>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" oninvalid="setCustomValidity('Enter a valid email')" oninput="setCustomValidity('')" title="Enter a valid email" required>
                     </label>
                 </div>
 
@@ -951,7 +951,7 @@
                             <i class="fas fa-unlock"></i>
                         </span>
                         Password
-                        <input type="password" name="password" id="pwrd" placeholder="Enter your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
+                        <input type="password" name="password" id="pwrd" placeholder="Enter your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" oninvalid="setCustomValidity('Password must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters')" oninput="setCustomValidity('')" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
                     </label>
                 </div>
 
@@ -962,7 +962,7 @@
                             <i class="fas fa-lock"></i>
                         </span>
                         Confirn Password
-                        <input type="password" name="password" id="confirm_pwrd" placeholder="Re-enter your Password">
+                        <input type="password" name="password" id="confirm_pwrd" placeholder="Re-enter your Password" oninvalid="setCustomValidity('Re-enter your password')" oninput="setCustomValidity('')" required>
                     </label>
                 </div>
 

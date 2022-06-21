@@ -98,17 +98,17 @@
                                     <i class="fas fa-envelope"></i>
                                 </span>
                                 Email
-                                <input type="text" name="email" id="email" placeholder="Enter your Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" title="Enter a valid email" required>
+                                <input type="email" name="email" id="email" placeholder="Enter your Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" oninvalid="setCustomValidity('Enter a valid email')" oninput="setCustomValidity('')" title="Enter a valid email" required>
                             </label>
                         </div>
         
-                        <div class="space">  
+                        <div class="space">
                             <label for="password">
                                 <span>
-                                    <i class="fas fa-lock"></i>
+                                    <i class="fas fa-unlock"></i>
                                 </span>
                                 Password
-                                <input type="password" name="password" id="pwrd" placeholder="Enter your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
+                                <input type="password" name="password" id="pwrd" placeholder="Enter your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" oninvalid="setCustomValidity('Password must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters')" oninput="setCustomValidity('')" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
                             </label>
                         </div>
         
