@@ -824,6 +824,9 @@ img.avatar {
 .left {
     margin-top: 0;
     height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -836,12 +839,16 @@ img.avatar {
     background-color: var(--clr-accent);
     border: 1px solid var(--clr-accent);
     color: var(--clr-dark);
-    cursor: pointer;
-    width: 70%;
+    cursor: pointer;    
     text-transform: none;
     display: block;
-    margin: auto;    
   }
+
+.btn-group button,
+.btn-group {
+    width: 70%;
+    margin: auto;
+}
 
 #remember,
 #reset,
@@ -884,4 +891,5 @@ img.avatar {
 #left-g a {
     color: var(--clr-dark);
     font-weight: var(--fw-bold);
+    font-size: 14px;
 }
