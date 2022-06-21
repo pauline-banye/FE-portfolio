@@ -310,7 +310,8 @@ header {
 .my-info {
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    background-image: url(https://gateway.pinata.cloud/ipfs/QmdTCsxixJWvRHyZGKw2GshawqaF7qmoNPGwvQww7XQTFp/bw-r.jpg);
+    /* background-image: url(https://gateway.pinata.cloud/ipfs/QmdTCsxixJWvRHyZGKw2GshawqaF7qmoNPGwvQww7XQTFp/bw-r.jpg); */
+    background-image: url(https://gateway.pinata.cloud/ipfs/QmdTCsxixJWvRHyZGKw2GshawqaF7qmoNPGwvQww7XQTFp/dark-l2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
