@@ -310,7 +310,7 @@ header {
 .my-info {
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    background-image: url(imgs/bw-r.jpg);
+    background-image: url(https://gateway.pinata.cloud/ipfs/QmdTCsxixJWvRHyZGKw2GshawqaF7qmoNPGwvQww7XQTFp/bw-r.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -535,12 +535,12 @@ img:hover,
 
 .skill,
 .my-folio {
-    background-image: url(imgs/col-l.jpg);
+    background-image: url(https://gateway.pinata.cloud/ipfs/QmYSsF27iRHL6jGEDD15DVF8Sg8UWxuvZ7P2TKdBoVSSiH/col-l.jpg);
 }
 
 .register,
 .log-in {
-    background-image: url(imgs/dark-l.jpg);
+    background-image: url(https://gateway.pinata.cloud/ipfs/QmYSsF27iRHL6jGEDD15DVF8Sg8UWxuvZ7P2TKdBoVSSiH/dark-l.jpg);
 }
 
 .confirm,
